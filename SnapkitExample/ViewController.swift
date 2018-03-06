@@ -53,7 +53,7 @@ class ViewController: UIViewController {
 	
 		navigationController?.navigationBar.prefersLargeTitles = true
 		navigationController?.navigationBar.barStyle = .blackOpaque
-		navigationController?.navigationBar.topItem?.title = "Snapkit Example"
+		navigationItem.title = "Snapkit Example"
 		navigationController?.navigationBar.barTintColor = .black
 		let attributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
 		navigationController?.navigationBar.largeTitleTextAttributes = attributes
