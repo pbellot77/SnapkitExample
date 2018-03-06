@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D177D52B22AA3F43D5FFCDD /* Pods_SnapkitExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67D83E319BA71F0484F36D73 /* Pods_SnapkitExample.framework */; };
 		BAC82775204EFAD300A4C645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC82774204EFAD300A4C645 /* AppDelegate.swift */; };
 		BAC82777204EFAD300A4C645 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC82776204EFAD300A4C645 /* ViewController.swift */; };
-		BAC8277A204EFAD300A4C645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAC82778204EFAD300A4C645 /* Main.storyboard */; };
 		BAC8277C204EFAD500A4C645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAC8277B204EFAD500A4C645 /* Assets.xcassets */; };
 		BAC8277F204EFAD500A4C645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAC8277D204EFAD500A4C645 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		461CDECE34E5F87FB556297E /* Pods-SnapkitExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapkitExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapkitExample/Pods-SnapkitExample.debug.xcconfig"; sourceTree = "<group>"; };
+		67D83E319BA71F0484F36D73 /* Pods_SnapkitExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapkitExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC82771204EFAD300A4C645 /* SnapkitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapkitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC82774204EFAD300A4C645 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAC82776204EFAD300A4C645 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BAC82779204EFAD300A4C645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BAC8277B204EFAD500A4C645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAC8277E204EFAD500A4C645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAC82780204EFAD500A4C645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F42D512E75AEBDD30B617378 /* Pods-SnapkitExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapkitExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapkitExample/Pods-SnapkitExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +31,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D177D52B22AA3F43D5FFCDD /* Pods_SnapkitExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		877C11F43251C57FDFCD0E72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67D83E319BA71F0484F36D73 /* Pods_SnapkitExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2B1586A9611F9CFBFB325A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				461CDECE34E5F87FB556297E /* Pods-SnapkitExample.debug.xcconfig */,
+				F42D512E75AEBDD30B617378 /* Pods-SnapkitExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BAC82768204EFAD300A4C645 = {
 			isa = PBXGroup;
 			children = (
 				BAC82773204EFAD300A4C645 /* SnapkitExample */,
 				BAC82772204EFAD300A4C645 /* Products */,
+				A2B1586A9611F9CFBFB325A5 /* Pods */,
+				877C11F43251C57FDFCD0E72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,7 +78,6 @@
 			children = (
 				BAC82774204EFAD300A4C645 /* AppDelegate.swift */,
 				BAC82776204EFAD300A4C645 /* ViewController.swift */,
-				BAC82778204EFAD300A4C645 /* Main.storyboard */,
 				BAC8277B204EFAD500A4C645 /* Assets.xcassets */,
 				BAC8277D204EFAD500A4C645 /* LaunchScreen.storyboard */,
 				BAC82780204EFAD500A4C645 /* Info.plist */,
@@ -71,9 +92,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAC82783204EFAD500A4C645 /* Build configuration list for PBXNativeTarget "SnapkitExample" */;
 			buildPhases = (
+				728B1E40875A85592932E0A8 /* [CP] Check Pods Manifest.lock */,
 				BAC8276D204EFAD300A4C645 /* Sources */,
 				BAC8276E204EFAD300A4C645 /* Frameworks */,
 				BAC8276F204EFAD300A4C645 /* Resources */,
+				B23224B21558AA1973FDDDEA /* [CP] Embed Pods Frameworks */,
+				E5316CEADF3E413F8796ADAB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,11 +148,64 @@
 			files = (
 				BAC8277F204EFAD500A4C645 /* LaunchScreen.storyboard in Resources */,
 				BAC8277C204EFAD500A4C645 /* Assets.xcassets in Resources */,
-				BAC8277A204EFAD300A4C645 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		728B1E40875A85592932E0A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SnapkitExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B23224B21558AA1973FDDDEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SnapkitExample/Pods-SnapkitExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapkitExample/Pods-SnapkitExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5316CEADF3E413F8796ADAB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapkitExample/Pods-SnapkitExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BAC8276D204EFAD300A4C645 /* Sources */ = {
@@ -143,14 +220,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BAC82778204EFAD300A4C645 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BAC82779204EFAD300A4C645 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BAC8277D204EFAD500A4C645 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -278,15 +347,13 @@
 		};
 		BAC82784204EFAD500A4C645 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 461CDECE34E5F87FB556297E /* Pods-SnapkitExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BR4H78C3XC;
 				INFOPLIST_FILE = SnapkitExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.patrickBellot.SnapkitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +363,13 @@
 		};
 		BAC82785204EFAD500A4C645 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F42D512E75AEBDD30B617378 /* Pods-SnapkitExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BR4H78C3XC;
 				INFOPLIST_FILE = SnapkitExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.patrickBellot.SnapkitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
